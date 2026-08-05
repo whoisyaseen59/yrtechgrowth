@@ -13,7 +13,6 @@ yr-tech-growth/
 ├── 📄 contact.html                               # Contact & Booking Strategy Page with Interactive Form
 ├── 📄 insights.html                             # Agency Growth & Digital Insights Directory
 ├── 📄 reviews.html                              # Client Testimonials & Success Case Reviews
-├── 📄 privacy-policy.html                       # Top-Level Privacy Policy
 ├── 📄 sitemap.html                              # HTML Directory & Full Site Index Page
 ├── 📄 sitemap.xml                               # XML Sitemap for Search Engine Indexing (50 URLs)
 ├── 📄 robots.txt                                # SEO Crawling & AI Crawler Directive Config

@@ -1065,23 +1065,29 @@ textarea:focus {
   display: inline-block;
 }
 
-.inner-hero {
-  background: linear-gradient(180deg, rgba(11, 15, 25, 0.88) 0%, rgba(11, 15, 25, 0.95) 100%), url('/assets/images/hero.webp') center center / cover no-repeat;
+.inner-hero,
+.hero1-section {
+  background: linear-gradient(180deg, rgba(11, 15, 25, 0.85) 0%, rgba(11, 15, 25, 0.95) 100%), url('/assets/images/hero.webp') center center / cover no-repeat;
   color: #FFFFFF;
-  padding: 90px 0 70px;
+  padding: 95px 0 75px;
   position: relative;
   overflow: hidden;
   border-bottom: 2px solid rgba(255, 215, 0, 0.25);
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.inner-hero::before {
+.inner-hero::before,
+.hero1-section::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 50% 30%, rgba(255, 215, 0, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+  background: radial-gradient(circle at 50% 30%, rgba(255, 215, 0, 0.18) 0%, rgba(0, 0, 0, 0) 70%);
   pointer-events: none;
 }
 
