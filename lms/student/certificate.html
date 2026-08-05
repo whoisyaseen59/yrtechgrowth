@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Certificate | YR Tech Growth LMS</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="/lms/assets/css/style.css">
+  <style>
+    @media print {
+      body * { visibility: hidden; }
+      #certFrame, #certFrame * { visibility: visible; }
+      #certFrame { position: absolute; left: 0; top: 0; width: 100%; border: none !important; }
+      .no-print { display: none !important; }
+    }
+  </style>
+</head>
+<body class="lms-body">
+  <div class="container py-4 no-print">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <a href="/lms/student/dashboard.html" class="btn btn-lms-outline"><i class="fa-solid fa-arrow-left me-1"></i> Back to Dashboard</a>
+      <button onclick="printCertificate()" class="btn btn-lms-gold"><i class="fa-solid fa-print me-1"></i> Download / Print PDF</button>
+    </div>
+  </div>
+
+  <div class="container mb-5">
+    <div id="certFrame" class="card lms-card p-5 text-center position-relative border-warning shadow-lg" style="border-width: 3px; background: radial-gradient(circle, #1F2937 0%, #0B0F19 100%);">
+      <div class="border border-warning border-opacity-50 p-4 rounded">
+        <img src="/assets/images/yr-tech-growth-logo.webp" alt="Logo" class="lms-brand-logo mb-3" style="max-height: 60px;">
+        <span class="d-block gold-text fw-bold text-uppercase tracking-widest mb-1">YR Tech Growth Academy</span>
+        <h1 class="display-5 text-white fw-bold mb-3">CERTIFICATE OF ACHIEVEMENT</h1>
+        <p class="text-muted mb-4">This official certificate is proudly presented to</p>
+
+        <h2 class="display-6 gold-gradient-text fw-extrabold mb-4" id="certStudentName">Muhammad Yaseen</h2>
+
+        <p class="text-light max-w-600 mx-auto mb-4">
+          for successfully demonstrating mastery and completing all requirements for the professional course:
+          <br><strong class="gold-text fs-5">Meta Ads & Performance Marketing Certification (2026 Edition)</strong>
+        </p>
+
+        <div class="row pt-4 mt-4 border-top border-secondary border-opacity-25 justify-content-between align-items-center text-start">
+          <div class="col-6">
+            <small class="text-muted d-block">Issue Date: August 05, 2026</small>
+            <small class="text-muted d-block">Verification Code: YRTG-LMS-89421</small>
+          </div>
+          <div class="col-6 text-end">
+            <div class="fw-bold gold-text">Muhammad Yaseen Rashid</div>
+            <small class="text-muted">CEO & Founder, YR Tech Growth</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/lms/assets/js/api.js"></script>
+  <script src="/lms/assets/js/main.js"></script>
+  <script src="/lms/assets/js/certificate.js"></script>
+</body>
+</html>

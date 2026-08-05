@@ -4,6 +4,7 @@
 
 User-agent: *
 Allow: /
+Disallow: /lms/
 
 # Block administrative, backup & sensitive directories
 Disallow: /admin/
@@ -43,27 +44,34 @@ Allow: /
 User-agent: YandexBot
 Allow: /
 
-# Allow AI & LLM Assistants for search recommendations
+# Disallow AI & LLM Assistants from LMS directory
 User-agent: GPTBot
 Allow: /
+Disallow: /lms/
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /lms/
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /lms/
 
 User-agent: Anthropic-ai
 Allow: /
+Disallow: /lms/
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /lms/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /lms/
 
 User-agent: Applebot
 Allow: /
+Disallow: /lms/
 
 # XML Sitemap declaration
 Sitemap: https://yrtechgrowth.site/sitemap.xml

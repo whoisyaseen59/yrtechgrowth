@@ -1,0 +1,158 @@
+/* YR Tech Growth LMS - Master Stylesheet */
+:root {
+  --lms-gold: #FFD700;
+  --lms-gold-dark: #D4AF37;
+  --lms-gold-glow: rgba(255, 215, 0, 0.25);
+  --lms-bg-dark: #0B0F19;
+  --lms-card-bg: #111827;
+  --lms-card-border: rgba(255, 215, 0, 0.15);
+  --lms-text-main: #F9FAFB;
+  --lms-text-muted: #9CA3AF;
+  --lms-accent-blue: #3B82F6;
+  --lms-success: #10B981;
+  --lms-warning: #F59E0B;
+  --lms-danger: #EF4444;
+}
+
+body.lms-body {
+  background-color: #0B0F19;
+  color: #F9FAFB;
+  font-family: 'Poppins', 'Open Sans', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* LMS Brand Navbar */
+.lms-navbar {
+  background: rgba(11, 15, 25, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.lms-brand-logo {
+  max-height: 40px;
+  width: auto;
+}
+
+.lms-nav-link {
+  color: #E5E7EB !important;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.lms-nav-link:hover, .lms-nav-link.active {
+  color: var(--lms-gold) !important;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFD700 0%, #FFF099 50%, #D4AF37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* LMS Cards & Panels */
+.lms-card {
+  background: #111827;
+  border: 1px solid rgba(255, 215, 0, 0.15);
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.lms-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 15px rgba(255, 215, 0, 0.15);
+  border-color: rgba(255, 215, 0, 0.4);
+}
+
+.lms-card-header {
+  border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+  padding: 1.25rem 1.5rem;
+  background: rgba(17, 24, 39, 0.8);
+}
+
+/* Buttons */
+.btn-lms-gold {
+  background: linear-gradient(135deg, #FFD700 0%, #D4AF37 100%);
+  color: #0B0F19;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.btn-lms-gold:hover {
+  background: linear-gradient(135deg, #FFF099 0%, #FFD700 100%);
+  color: #000;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+}
+
+.btn-lms-outline {
+  background: transparent;
+  color: var(--lms-gold);
+  border: 1px solid var(--lms-gold);
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 0.5rem 1.25rem;
+  transition: all 0.2s ease;
+}
+
+.btn-lms-outline:hover {
+  background: var(--lms-gold);
+  color: #0B0F19;
+}
+
+/* Form Inputs */
+.lms-input {
+  background-color: #1F2937 !important;
+  border: 1px solid rgba(255, 215, 0, 0.2) !important;
+  color: #F9FAFB !important;
+  border-radius: 8px !important;
+  padding: 0.65rem 1rem !important;
+}
+
+.lms-input:focus {
+  border-color: var(--lms-gold) !important;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.25) !important;
+  outline: none !important;
+}
+
+/* Badges */
+.lms-badge {
+  background: rgba(255, 215, 0, 0.15);
+  color: var(--lms-gold);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  padding: 0.35em 0.75em;
+  font-size: 0.75rem;
+  border-radius: 50rem;
+  font-weight: 600;
+}
+
+/* Progress Bar */
+.progress-lms {
+  background-color: #1F2937;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar-gold {
+  background: linear-gradient(90deg, #D4AF37 0%, #FFD700 100%);
+}
+
+/* Hero Section */
+.lms-hero {
+  background: linear-gradient(180deg, rgba(11, 15, 25, 0.85) 0%, rgba(11, 15, 25, 0.95) 100%), url('/assets/images/hero.webp') center center / cover no-repeat;
+  padding: 80px 0 60px;
+  border-bottom: 2px solid rgba(255, 215, 0, 0.2);
+}
+
+/* Footer */
+.lms-footer {
+  background-color: #000000;
+  border-top: 2px solid var(--lms-gold);
+  padding: 40px 0 20px;
+  color: #9CA3AF;
+}
