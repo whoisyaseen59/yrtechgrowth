@@ -64,6 +64,14 @@ footer p {
   font-size: var(--small-fluid);
 }
 
+.hover-gold {
+  transition: color 0.2s ease-in-out;
+}
+
+.hover-gold:hover {
+  color: var(--secondary-color) !important;
+}
+
 .btn {
   min-width: 48px;
   min-height: 48px;
