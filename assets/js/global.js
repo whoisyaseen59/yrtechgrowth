@@ -176,13 +176,13 @@ function initializePWA() {
   if (!banner) {
     banner = document.createElement('div');
     banner.id = 'installPrompt';
-    banner.className = 'pwa-install-banner';
+    banner.className = 'pwa-banner-content-wrap pwa-install-banner';
     banner.innerHTML = `
       <div class="pwa-banner-content">
-        <img src="assets/images/yr-tech-growth-logo.webp" alt="YR Tech Growth Icon" class="pwa-banner-icon">
+        <img src="/assets/images/yr-tech-growth-logo.webp" alt="YR Tech Growth Icon" class="pwa-banner-icon" width="40" height="40">
         <div class="pwa-banner-info">
           <div class="pwa-banner-title">Install YR Tech Growth App</div>
-          <p class="pwa-banner-desc">Fast access, offline mode & instant digital agency updates</p>
+          <p class="pwa-banner-desc">Fast access, offline mode & instant agency updates</p>
         </div>
       </div>
       <div class="pwa-banner-actions">
@@ -203,7 +203,7 @@ function initializePWA() {
       <div class="ios-pwa-modal">
         <div class="ios-modal-header">
           <div class="ios-modal-title">
-            <img src="assets/images/yr-tech-growth-logo.webp" alt="App Icon" style="width: 28px; height: 28px; border-radius: 6px;">
+            <img src="/assets/images/yr-tech-growth-logo.webp" alt="App Icon" style="width: 28px; height: 28px; border-radius: 6px;">
             Install on iOS
           </div>
           <button class="ios-modal-close" id="closeIosPwaModal">&times;</button>
