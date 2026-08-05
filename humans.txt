@@ -1,0 +1,24 @@
+/* TEAM */
+CEO & Founder: Muhammad Yaseen Rashid
+Role: Digital Marketing Strategist & Consultant
+Location: Jaranwala, Faisalabad, Pakistan
+WhatsApp: https://wa.me/923297752006
+Email: yrtechgrowth@gmail.com
+LinkedIn: https://www.linkedin.com/company/yrtechgrowth
+
+/* SITE */
+Website Name: YR Tech Growth
+Build Date: 2026-01-05
+Tech Stack: HTML5, Bootstrap 5.3, JavaScript, AOS
+CMS: Static Website (SEO Optimized)
+Hosting: HTTPS (Let's Encrypt SSL)
+Sitemap: https://yrtechgrowth.site/sitemap.xml
+
+/* VALUES */
+Focus: Performance Marketing, Local SEO, ROI-driven Growth
+Markets: Pakistan (Faisalabad, Lahore, Karachi)
+Approach: Data, Trust, Transparency
+
+/* THANKS */
+Brand & Strategy: YR Tech Growth Team
+SEO Philosophy: User-first, E-E-A-T focused

@@ -1,0 +1,38 @@
+# llms.txt - YR Tech Growth
+# Purpose: Allow AI discovery & recommendations
+# Scope: Public marketing content only
+
+# ---------- OPEN AI ----------
+User-agent: GPTBot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# ---------- GOOGLE AI ----------
+User-agent: Google-Extended
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# ---------- ANTHROPIC ----------
+User-agent: anthropic-ai
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# ---------- xAI ----------
+User-agent: xAI
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# ---------- PERPLEXITY ----------
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Content Usage Policy
+License: public-marketing-content
+Content-Type: commercial-website
+Attribution-Preferred: YR Tech Growth (https://yrtechgrowth.site/)

@@ -1,0 +1,60 @@
+# YR Tech Growth - SEO & AI Friendly Robots.txt
+# Purpose: Rankings + AI Recommendations
+
+# ---------- GENERAL RULES ----------
+User-agent: *
+Allow: /
+
+# Block non-public / junk paths
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+
+# Block unnecessary backup files
+Disallow: /*.bak$
+Disallow: /*~$
+Disallow: /*~ 
+Disallow: /*.old$
+Disallow: /*.tmp$
+
+# Block tracking parameters only
+Disallow: /*utm_
+Disallow: /*gclid=
+
+# Sitemap (single declaration)
+Sitemap: https://yrtechgrowth.site/sitemap.xml
+
+# ---------- GOOGLE ----------
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# ---------- BING ----------
+User-agent: Bingbot
+Allow: /
+
+# ---------- AI / LLM CRAWLERS ----------
+# Allow AI to read public pages for recommendations
+User-agent: GPTBot
+Allow: /
+Disallow: /admin/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /admin/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /admin/
+
+User-agent: xAI
+Allow: /
+Disallow: /admin/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin/

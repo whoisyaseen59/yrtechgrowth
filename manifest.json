@@ -1,0 +1,71 @@
+{
+  "id": "/",
+  "name": "YR Tech Growth - Digital Marketing & AI Agency",
+  "short_name": "YR Tech Growth",
+  "description": "Pakistan's premier digital marketing agency offering SEO, PPC, social media marketing, AI automation, and Shopify development.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
+  "background_color": "#111827",
+  "theme_color": "#FFD700",
+  "orientation": "any",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": [
+    "business",
+    "productivity",
+    "marketing",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "assets/images/yr-tech-growth-logo.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/images/yr-tech-growth-logo.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/images/yr-tech-growth-logo.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Our Services",
+      "short_name": "Services",
+      "description": "View digital marketing services",
+      "url": "/#services",
+      "icons": [
+        {
+          "src": "assets/images/yr-tech-growth-logo.webp",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Free Consultation",
+      "short_name": "Contact",
+      "description": "Get in touch for free consultation",
+      "url": "/#contact",
+      "icons": [
+        {
+          "src": "assets/images/yr-tech-growth-logo.webp",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "prefer_related_applications": false
+}

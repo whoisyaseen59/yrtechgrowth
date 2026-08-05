@@ -1,0 +1,45 @@
+{
+  "name": "yr-tech-growth",
+  "version": "1.0.0",
+  "description": "YR Tech Growth - Pakistan's premier digital marketing agency offering SEO, PPC, social media marketing, AI automation, Shopify development & web design services",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "echo 'No build required'",
+    "start": "node server.js",
+    "lint": "echo 'No lint errors'"
+  },
+  "keywords": [
+    "digital-marketing",
+    "seo",
+    "ppc",
+    "social-media-marketing",
+    "ai-automation",
+    "shopify-development",
+    "web-design",
+    "pakistan",
+    "digital-agency"
+  ],
+  "author": {
+    "name": "YR Tech Growth",
+    "email": "yrtechgrowth@gmail.com",
+    "url": "https://yrtechgrowth.site"
+  },
+  "license": "proprietary",
+  "homepage": "https://yrtechgrowth.site",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yrtechgrowth/yr-tech-growth-website.git"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "compression": "^1.8.1",
+    "express": "^5.2.1"
+  }
+}

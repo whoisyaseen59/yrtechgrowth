@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square70x70logo src="https://yrtechgrowth.com/assets/images/yr-tech-growth-logo.webp"/>
+            <square150x150logo src="https://yrtechgrowth.com/assets/images/yr-tech-growth-logo.webp"/>
+            <square310x310logo src="https://yrtechgrowth.com/assets/images/yr-tech-growth-logo.webp"/>
+            <TileColor>#F59E0B</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>

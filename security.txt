@@ -1,0 +1,13 @@
+# security.txt v1.1
+# YR Tech Growth - Pakistan
+
+Contact: mailto:yrtechgrowth@gmail.com
+Contact: https://wa.me/923297752006
+
+Policy: https://yrtechgrowth.site/privacy-policy.html
+
+Acknowledgments: https://yrtechgrowth.site/
+
+Preferred-Languages: en, ur
+
+Expires: 2026-12-31
