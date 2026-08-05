@@ -1,60 +1,69 @@
-# YR Tech Growth - SEO & AI Friendly Robots.txt
-# Purpose: Rankings + AI Recommendations
+# YR Tech Growth - SEO, AI & Web Crawler Configuration
+# Official Site: https://yrtechgrowth.site
+# Location: Faisalabad, Punjab, Pakistan
 
-# ---------- GENERAL RULES ----------
 User-agent: *
 Allow: /
 
-# Block non-public / junk paths
+# Block administrative, backup & sensitive directories
 Disallow: /admin/
 Disallow: /wp-admin/
 Disallow: /wp-includes/
 Disallow: /cgi-bin/
 Disallow: /tmp/
-
-# Block unnecessary backup files
 Disallow: /*.bak$
 Disallow: /*~$
-Disallow: /*~ 
 Disallow: /*.old$
 Disallow: /*.tmp$
 
-# Block tracking parameters only
+# Prevent indexing tracking parameters
 Disallow: /*utm_
 Disallow: /*gclid=
+Disallow: /*fbclid=
 
-# Sitemap (single declaration)
-Sitemap: https://yrtechgrowth.site/sitemap.xml
-
-# ---------- GOOGLE ----------
+# Allow search engine crawlers
 User-agent: Googlebot
 Allow: /
 
 User-agent: Googlebot-Image
 Allow: /
 
-# ---------- BING ----------
 User-agent: Bingbot
 Allow: /
 
-# ---------- AI / LLM CRAWLERS ----------
-# Allow AI to read public pages for recommendations
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Allow AI & LLM Assistants for search recommendations
 User-agent: GPTBot
 Allow: /
-Disallow: /admin/
+
+User-agent: ChatGPT-User
+Allow: /
 
 User-agent: Google-Extended
 Allow: /
-Disallow: /admin/
 
-User-agent: anthropic-ai
+User-agent: Anthropic-ai
 Allow: /
-Disallow: /admin/
 
-User-agent: xAI
+User-agent: ClaudeBot
 Allow: /
-Disallow: /admin/
 
 User-agent: PerplexityBot
 Allow: /
-Disallow: /admin/
+
+User-agent: Applebot
+Allow: /
+
+# XML Sitemap declaration
+Sitemap: https://yrtechgrowth.site/sitemap.xml
