@@ -162,4 +162,4 @@ The application runs on a Node.js Express server (`server.js`) configured for po
 - **Location:** Jaranwala Road, Faisalabad, Punjab, Pakistan
 - **Phone / WhatsApp:** [+92 329 7752006](https://wa.me/923297752006)
 - **Email:** yrtechgrowth@gmail.com
-- **Website:** [https://yrtechgrowth.site](https://yrtechgrowth.site)
+- **Website:** [https://yrtech.site](https://yrtech.site)

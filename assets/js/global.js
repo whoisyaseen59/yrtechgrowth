@@ -118,7 +118,7 @@ function initializeCookieConsent() {
   if (!localStorage.getItem('cookieConsent')) {
     setTimeout(() => {
       cookieConsent.classList.add('show');
-    }, 2000);
+    }, 5000);
   }
   if (acceptBtn) {
     acceptBtn.addEventListener('click', () => {
@@ -150,14 +150,94 @@ function initializeNavbar() {
     }
   }, 100);
   window.addEventListener('scroll', handleScroll);
-  const navLinks = document.querySelectorAll('.nav-link');
+
   const navbarCollapse = document.querySelector('.navbar-collapse');
-  navLinks.forEach(link => {
+  const dropdownToggles = document.querySelectorAll('.navbar .dropdown-toggle');
+
+  dropdownToggles.forEach(toggle => {
+    if (!toggle.querySelector('.dropdown-chevron')) {
+      const chevron = document.createElement('i');
+      chevron.className = 'fa-solid fa-chevron-down ms-1 dropdown-chevron';
+      chevron.style.fontSize = '0.75rem';
+      chevron.style.transition = 'transform 0.3s ease';
+      toggle.appendChild(chevron);
+    }
+
+    toggle.addEventListener('click', function (e) {
+      if (window.innerWidth < 992) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        const parentLi = this.closest('.dropdown');
+        const menu = parentLi ? parentLi.querySelector('.dropdown-menu') : null;
+
+        if (menu) {
+          const isShown = menu.classList.contains('show');
+
+          document.querySelectorAll('.navbar .dropdown-menu.show').forEach(m => {
+            if (m !== menu) {
+              m.classList.remove('show');
+              const t = m.closest('.dropdown')?.querySelector('.dropdown-toggle');
+              if (t) t.setAttribute('aria-expanded', 'false');
+            }
+          });
+
+          if (isShown) {
+            menu.classList.remove('show');
+            this.setAttribute('aria-expanded', 'false');
+          } else {
+            menu.classList.add('show');
+            this.setAttribute('aria-expanded', 'true');
+          }
+        }
+      }
+    });
+  });
+
+  const leafLinks = document.querySelectorAll('.navbar-nav .nav-link:not(.dropdown-toggle), .navbar-nav .dropdown-item');
+  leafLinks.forEach(link => {
     link.addEventListener('click', () => {
+      if (navbarCollapse && navbarCollapse.classList.contains('show') && window.innerWidth < 992) {
+        if (typeof bootstrap !== 'undefined' && bootstrap.Collapse) {
+          const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse) || new bootstrap.Collapse(navbarCollapse, { toggle: false });
+          bsCollapse.hide();
+        } else {
+          navbarCollapse.classList.remove('show');
+        }
+      }
+    });
+  });
+
+  document.addEventListener('click', function (e) {
+    if (navbar && !navbar.contains(e.target)) {
+      if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+        if (typeof bootstrap !== 'undefined' && bootstrap.Collapse) {
+          const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+          if (bsCollapse) bsCollapse.hide();
+          else navbarCollapse.classList.remove('show');
+        } else {
+          navbarCollapse.classList.remove('show');
+        }
+      }
+      document.querySelectorAll('.navbar .dropdown-menu.show').forEach(m => {
+        m.classList.remove('show');
+        const t = m.closest('.dropdown')?.querySelector('.dropdown-toggle');
+        if (t) t.setAttribute('aria-expanded', 'false');
+      });
+    }
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
       if (navbarCollapse && navbarCollapse.classList.contains('show')) {
         navbarCollapse.classList.remove('show');
       }
-    });
+      document.querySelectorAll('.navbar .dropdown-menu.show').forEach(m => {
+        m.classList.remove('show');
+        const t = m.closest('.dropdown')?.querySelector('.dropdown-toggle');
+        if (t) t.setAttribute('aria-expanded', 'false');
+      });
+    }
   });
 }
 function initializePWA() {
@@ -259,14 +339,16 @@ function initializePWA() {
   window.addEventListener('beforeinstallprompt', (e) => {
     e.preventDefault();
     deferredPrompt = e;
-    showBanner();
+    setTimeout(() => {
+      showBanner();
+    }, 12000);
   });
 
   // iOS Safari specific banner display logic
   if (isIOS && !isStandalone) {
     setTimeout(() => {
       showBanner();
-    }, 3000);
+    }, 15000);
   }
 
   // Handle click on any install button (Banner, Header, Custom Buttons)
@@ -285,7 +367,7 @@ function initializePWA() {
       iosModal.classList.add('show');
     } else {
       // Fallback for desktop browsers where beforeinstallprompt didn't trigger
-      alert('To install YR Tech Growth App, open your browser menu (3 dots or share button) and select "Install app" or "Add to Home Screen".');
+      showToast('To install YR Tech App, click your browser menu (3 dots or share icon) and select "Add to Home Screen".', 'info', 5000);
     }
   };
 

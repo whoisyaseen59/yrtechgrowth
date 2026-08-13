@@ -1,5 +1,5 @@
 # YR Tech Growth - SEO, AI & Web Crawler Configuration
-# Official Site: https://yrtechgrowth.site
+# Official Site: https://yrtech.site
 # Location: Faisalabad, Punjab, Pakistan
 
 User-agent: *
@@ -74,4 +74,4 @@ Allow: /
 Disallow: /lms/
 
 # XML Sitemap declaration
-Sitemap: https://yrtechgrowth.site/sitemap.xml
+Sitemap: https://yrtech.site/sitemap.xml

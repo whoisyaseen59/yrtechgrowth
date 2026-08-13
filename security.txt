@@ -4,9 +4,9 @@
 Contact: mailto:yrtechgrowth@gmail.com
 Contact: https://wa.me/923297752006
 
-Policy: https://yrtechgrowth.site/privacy-policy.html
+Policy: https://yrtech.site/privacy-policy.html
 
-Acknowledgments: https://yrtechgrowth.site/
+Acknowledgments: https://yrtech.site/
 
 Preferred-Languages: en, ur
 
